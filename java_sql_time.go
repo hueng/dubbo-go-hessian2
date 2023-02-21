@@ -27,7 +27,7 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go-hessian2/java_sql_time"
+	"github.com/hueng/dubbo-go-hessian2/java_sql_time"
 )
 
 func init() {

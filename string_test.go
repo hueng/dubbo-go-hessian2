@@ -218,7 +218,7 @@ func TestStringEmoji(t *testing.T) {
 
 func TestStringEmoji2(t *testing.T) {
 	// see: test_hessian/src/main/java/test/TestString.java
-	// see https://github.com/apache/dubbo-go-hessian2/issues/252
+	// see https://github.com/hueng/dubbo-go-hessian2/issues/252
 	s0 := "❄️🚫🚫🚫🚫 多次自我介绍、任务、动态和"
 
 	testDecodeFramework(t, "customReplyStringEmoji2", s0)

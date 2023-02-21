@@ -31,7 +31,7 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go-hessian2/java_exception"
+	"github.com/hueng/dubbo-go-hessian2/java_exception"
 )
 
 var (
@@ -70,9 +70,9 @@ func init() {
 	listTypeNameMapper.Store("float64", "[double")
 	listTypeNameMapper.Store("bool", "[boolean")
 	listTypeNameMapper.Store("time.Time", "[date")
-	listTypeNameMapper.Store("github.com/apache/dubbo-go-hessian2/java_exception/java_exception.Throwabler", "[java.lang.Throwable")
+	listTypeNameMapper.Store("github.com/hueng/dubbo-go-hessian2/java_exception/java_exception.Throwabler", "[java.lang.Throwable")
 
-	listTypeNameMapper.Store("github.com/apache/dubbo-go-hessian2/hessian.Object", "[object")
+	listTypeNameMapper.Store("github.com/hueng/dubbo-go-hessian2/hessian.Object", "[object")
 }
 
 func registerTypeName(gotype, javatype string) {
@@ -152,7 +152,7 @@ func (e *Encoder) writeTypedList(v interface{}) error {
 	var err error
 
 	value := reflect.ValueOf(v)
-	// https://github.com/apache/dubbo-go-hessian2/issues/317
+	// https://github.com/hueng/dubbo-go-hessian2/issues/317
 	// if list is null, just return 'N'
 	if value.IsNil() {
 		e.buffer = encByte(e.buffer, BC_NULL) // 'N'

@@ -18,8 +18,8 @@
 package testfuncs
 
 import (
-	hessian "github.com/apache/dubbo-go-hessian2"
-	"github.com/apache/dubbo-go-hessian2/java8_time"
+	hessian "github.com/hueng/dubbo-go-hessian2"
+	"github.com/hueng/dubbo-go-hessian2/java8_time"
 )
 
 // Java8TimeYear is test java8 java.time.Year

@@ -18,7 +18,7 @@
 package testfuncs
 
 import (
-	hessian "github.com/apache/dubbo-go-hessian2"
+	hessian "github.com/hueng/dubbo-go-hessian2"
 )
 
 func HelloWorldString() []byte {

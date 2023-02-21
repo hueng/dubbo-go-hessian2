@@ -24,7 +24,7 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go-hessian2/output/testfuncs"
+	"github.com/hueng/dubbo-go-hessian2/output/testfuncs"
 )
 
 type outputFunc func() []byte

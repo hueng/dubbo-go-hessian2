@@ -18,7 +18,7 @@
 package hessian
 
 import (
-	"github.com/apache/dubbo-go-hessian2/java_util"
+	"github.com/hueng/dubbo-go-hessian2/java_util"
 )
 
 func init() {

@@ -22,7 +22,7 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go-hessian2/java8_time"
+	"github.com/hueng/dubbo-go-hessian2/java8_time"
 )
 
 func TestJava8Time(t *testing.T) {

@@ -27,7 +27,7 @@ import (
 )
 
 import (
-	hessian "github.com/apache/dubbo-go-hessian2"
+	hessian "github.com/hueng/dubbo-go-hessian2"
 )
 
 type User struct {

@@ -773,7 +773,7 @@ func (dog *DogAll) JavaClassName() string {
 	return "test.DogAll"
 }
 
-// see https://github.com/apache/dubbo-go-hessian2/issues/149
+// see https://github.com/hueng/dubbo-go-hessian2/issues/149
 func TestIssue149_EmbedStructGoDecode(t *testing.T) {
 	t.Run(`extends to embed`, func(t *testing.T) {
 		RegisterPOJO(&Dog{})

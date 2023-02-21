@@ -31,7 +31,7 @@ public class TestString {
     }
 
     /**
-     * see https://github.com/apache/dubbo-go-hessian2/issues/252
+     * see https://github.com/hueng/dubbo-go-hessian2/issues/252
      */
     public static String getEmojiTestString2() {
         return "❄️\uD83D\uDEAB\uD83D\uDEAB\uD83D\uDEAB\uD83D\uDEAB 多次自我介绍、任务、动态和";

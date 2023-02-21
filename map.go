@@ -18,6 +18,7 @@
 package hessian
 
 import (
+	"fmt"
 	"io"
 	"reflect"
 
@@ -306,7 +307,12 @@ func (d *Decoder) decMap(flag int32) (interface{}, error) {
 			if err != nil {
 				return nil, err
 			}
-			m[k] = v
+			// m[k] = v
+			if _, ok := k.(map[string]interface{}); ok {
+				m[fmt.Sprintf("%v", k)] = v
+			} else {
+				m[k] = v
+			}
 		}
 		_, err = d.ReadByte()
 		if err != nil {

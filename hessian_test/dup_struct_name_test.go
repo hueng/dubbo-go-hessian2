@@ -25,8 +25,8 @@ import (
 )
 
 import (
-	"github.com/apache/dubbo-go-hessian2"
-	dupclass "github.com/apache/dubbo-go-hessian2/hessian_test/hessian_test"
+	"github.com/hueng/dubbo-go-hessian2"
+	dupclass "github.com/hueng/dubbo-go-hessian2/hessian_test/hessian_test"
 )
 
 import (
@@ -169,6 +169,6 @@ func checkResponseBody(t *testing.T, decodedResponse *hessian.Response, h *hessi
 }
 
 func TestDuplicatedClassGetGoType(t *testing.T) {
-	assert.Equal(t, "github.com/apache/dubbo-go-hessian2/hessian_test_test/hessian_test.CaseZ", hessian.GetGoType(&CaseZ{}))
-	assert.Equal(t, "github.com/apache/dubbo-go-hessian2/hessian_test/hessian_test/hessian_test.CaseZ", hessian.GetGoType(&dupclass.CaseZ{}))
+	assert.Equal(t, "github.com/hueng/dubbo-go-hessian2/hessian_test_test/hessian_test.CaseZ", hessian.GetGoType(&CaseZ{}))
+	assert.Equal(t, "github.com/hueng/dubbo-go-hessian2/hessian_test/hessian_test/hessian_test.CaseZ", hessian.GetGoType(&dupclass.CaseZ{}))
 }

@@ -18,8 +18,8 @@
 package testfuncs
 
 import (
-	hessian "github.com/apache/dubbo-go-hessian2"
-	"github.com/apache/dubbo-go-hessian2/java_exception"
+	hessian "github.com/hueng/dubbo-go-hessian2"
+	"github.com/hueng/dubbo-go-hessian2/java_exception"
 )
 
 // JavaException is test java Exception
